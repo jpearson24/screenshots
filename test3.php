@@ -21,7 +21,7 @@
 
     }
     elseif( $_GET['show'] == 'true' ) {
-    //echo md5(sha1('FireSword$06'));
+    //echo md5(sha1(''));
 ?><html>
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>

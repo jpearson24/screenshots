@@ -11,7 +11,7 @@
             viewHeight: 200,
             targetWidth: 300,
             targetHeight: 200,
-            scale: '0.5',
+            //scale: '0.5',
             //offset: 50,
             position: 'left'
         });

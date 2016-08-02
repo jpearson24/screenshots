@@ -41,7 +41,7 @@
         // });
         $(document).ready(function() {
             $(".livepreview").click(function() {
-                $('#text').val('');
+                $('#text').html('');
                 $.ajax({
                     url : $(this).attr("href"),
                     dataType: "text",

@@ -6,7 +6,7 @@
     <link href="css/livepreview-demo.css" rel="stylesheet" type="text/css">
     <script>
         $(".livepreview").livePreview({
-            trigger: 'hover',
+            // trigger: 'hover',
             // viewWidth: 300,
             // viewHeight: 200,
             // targetWidth: 300,

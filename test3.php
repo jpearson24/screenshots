@@ -30,32 +30,11 @@
     <link href="css/livepreview-demo.css" rel="stylesheet" type="text/css">
     <script src="clipboard/dist/clipboard.min.js"></script>
     <script>
-    (function() {
-        'use strict';
-        // click events
-        document.body.addEventListener('click', copy, true);
-        // event handler
-        function copy(e) {
-            // find target element
-            var
-                t = e.target,
-                c = t.dataset.copytarget,
-                inp = (c ? document.querySelector(c) : null);
-            // is element selectable?
-            if (inp && inp.select) {
-                // select text
-                inp.select();
-                try {
-                    // copy text
-                    document.execCommand('copy');
-                    inp.blur();
-                }
-                    catch (err) {
-                    alert('please press Ctrl/Cmd+C to copy');
-                }
+        new Clipboard('.btn', {
+            text: function() {
+                return document.querySelector('input[type=hidden]').value;
             }
-        }
-    })();
+        });
     </script>
     <script>
         $(document).ready(function() {
@@ -160,7 +139,7 @@
                     </td>
                     <td>$filedate</td>
                     <td>$filetime</td>
-                    <td><button data-copytarget=\"#but-$i\">Copy</button></td>
+                    <td><button data-clipboard-text=\"$imgpage\">Copy</button></td>
                 </tr>"; // Thumbnail source: http://www.webgeekly.com/tutorials/php/how-to-create-an-image-thumbnail-on-the-fly-using-php/
                 $i++;
             }

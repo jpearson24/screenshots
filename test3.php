@@ -30,7 +30,13 @@
     <link href="css/livepreview-demo.css" rel="stylesheet" type="text/css">
     <script src="https://cdn.rawgit.com/zenorocha/clipboard.js/v1.5.12/dist/clipboard.min.js"></script>
     <script>
-        new Clipboard('.btn');
+    var clipboard = new Clipboard('.btn');
+        clipboard.on('success', function(e) {
+        console.log(e);
+        });
+        clipboard.on('error', function(e) {
+        console.log(e);
+        });
     </script>
     <script>
         // $(".livepreview").livePreview({
@@ -134,7 +140,7 @@
                 $filedate = date('d/m/y',filemtime($imgpage));
                 $filetime = date('H:i',filemtime($imgpage));
                 echo "<tr><td class=\"thumbs\"><a href=\"$imgpage\" data-lightbox=\"images\" data-thumbnail-src=\"$imgpage\"><img src=\"thumbnail.php?file=$imgpage&maxw=50&maxh=25\" /></a></td><td>$filedate</td><td>$filetime</td><td>
-                <button class=\"btn\" data-clipboard-copy data-clipboard-text=\"https://ssby.me/ss/$imgpage\">
+                <button class=\"btn\" data-clipboard-text=\"https://ssby.me/ss/$imgpage\">
                     Copy to clipboard
                 </button>
                 </td></tr>"; // Thumbnail source: http://www.webgeekly.com/tutorials/php/how-to-create-an-image-thumbnail-on-the-fly-using-php/

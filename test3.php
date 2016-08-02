@@ -1,6 +1,6 @@
 <?php
     $password = $_POST['password'];
-    $password = md5(sha1($password))
+    $password = md5(sha1($password));
     if( empty($_POST) ) {
         echo '<form action="" method="post">
             <input type="password" name="Password" />

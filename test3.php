@@ -28,7 +28,7 @@
     <link href="lightbox/lightbox.css" rel="stylesheet">
     <script type="text/javascript" src="js/jquery-live-preview.js"></script>
     <link href="css/livepreview-demo.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.jsdelivr.net/clipboard.js/1.5.3/clipboard.min.js"></script>
+    <script src="clipboard/dist/clipboard.min.js"></script>
     <script>
         $(document).ready(function() {
             $(".livepreview").click(function() {
@@ -118,9 +118,29 @@
 
             echo '<div style="float: left;"><table>';
             foreach($imgpages as $imgpage) {
+                if( !isset($i) ) {
+                    $i = 1;
+                }
                 $filedate = date('d/m/y',filemtime($imgpage));
                 $filetime = date('H:i',filemtime($imgpage));
-                echo "<tr><td class=\"thumbs\"><a href=\"$imgpage\" data-lightbox=\"images\" data-thumbnail-src=\"$imgpage\"><img src=\"thumbnail.php?file=$imgpage&maxw=50&maxh=25\" /></a></td><td>$filedate</td><td>$filetime</td></tr>"; // Thumbnail source: http://www.webgeekly.com/tutorials/php/how-to-create-an-image-thumbnail-on-the-fly-using-php/
+                echo "<tr>
+                    <td class=\"thumbs\">
+                        <a href=\"$imgpage\" data-lightbox=\"images\" data-thumbnail-src=\"$imgpage\">
+                            <img src=\"thumbnail.php?file=$imgpage&maxw=50&maxh=25\" />
+                        </a>
+                        <input type=\"hidden\" value=\"$imgpage\" id=$i/>
+                    </td>
+                    <td>
+                        $filedate
+                    </td>
+                    <td>
+                        $filetime
+                    </td>
+                    <td>
+                        <button data-clipboard-target=$i>Copy</button>
+                    </td>
+                </tr>"; // Thumbnail source: http://www.webgeekly.com/tutorials/php/how-to-create-an-image-thumbnail-on-the-fly-using-php/
+                $i++
             }
 
             echo '</table></div>';

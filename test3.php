@@ -16,6 +16,7 @@
         //     //position: 'left'
         // });
         $(document).ready(function() {
+            $('textarea').val('');
             $(".livepreview").click(function() {
                 $.ajax({
                     url : $(this).attr("href"),

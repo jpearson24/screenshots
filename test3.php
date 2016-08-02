@@ -5,15 +5,26 @@
     <script type="text/javascript" src="js/jquery-live-preview.js"></script>
     <link href="css/livepreview-demo.css" rel="stylesheet" type="text/css">
     <script>
-        $(".livepreview").livePreview({
-            // trigger: 'hover',
-            // viewWidth: 300,
-            // viewHeight: 200,
-            // targetWidth: 300,
-            // targetHeight: 200,
-            // scale: '0.5',
-            // offset: 50,
-            //position: 'left'
+        // $(".livepreview").livePreview({
+        //     // trigger: 'hover',
+        //     // viewWidth: 300,
+        //     // viewHeight: 200,
+        //     // targetWidth: 300,
+        //     // targetHeight: 200,
+        //     // scale: '0.5',
+        //     // offset: 50,
+        //     //position: 'left'
+        // });
+        $(document).ready(function() {
+            $(".livepreview").click(function() {
+                $.ajax({
+                    url : $(this).attr("href"),
+                    dataType: "text",
+                    success : function (data) {
+                        $("#text").text(data);
+                    }
+                });
+            });
         });
     </script>
     <style>
@@ -95,10 +106,13 @@
                 $filetime
                 </td></tr>"; // Thumbnail source: http://www.webgeekly.com/tutorials/php/how-to-create-an-image-thumbnail-on-the-fly-using-php/
             }
+
             echo '</table>'.$pageNumbers.'</div>';
 
             // Text files
-            echo '<div style="float: right;"><table>';
+            echo '<div style="float: right;">
+            <textarea rows="10" cols="60" id="text"></textarea>
+            <table>';
             foreach($txtpages as $txtpage) {
                 $filedate = date('d/m/y',filemtime($txtpage));
                 $filetime = date('H:i',filemtime($txtpage));

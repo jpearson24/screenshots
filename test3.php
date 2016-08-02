@@ -41,11 +41,11 @@
         // });
         $(document).ready(function() {
             $(".livepreview").click(function() {
-                $('#text').html('');
+                $("textarea").empty();
                 $.ajax({
-                    url : $(this).attr("href"),
+                    url: $(this).attr("href"),
                     dataType: "text",
-                    success : function (data) {
+                    success: function (data) {
                         $("#text").text(data);
                     }
                 });

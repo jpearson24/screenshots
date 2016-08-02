@@ -1,5 +1,5 @@
 <?php
-    echo $_POST;
+    print_r($_POST);
     echo $password = $_POST['password'];
     $password = md5(sha1($password));
 

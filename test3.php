@@ -7,7 +7,7 @@
     <script>
         $(".livepreview").livePreview({
             trigger: 'hover',
-            viewWidth: 300,  
+            viewWidth: 300,
             viewHeight: 200,
             targetWidth: 1000,
             targetHeight: 800,

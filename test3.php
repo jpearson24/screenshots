@@ -139,7 +139,7 @@
                     </td>
                     <td>$filedate</td>
                     <td>$filetime</td>
-                    <td><button class=\"btn\" data-clipboard-target=\"but-$i\">Copy</button></td>
+                    <td><button class=\"btn\" data-clipboard-target=\"#but-$i\">Copy</button></td>
                 </tr>"; // Thumbnail source: http://www.webgeekly.com/tutorials/php/how-to-create-an-image-thumbnail-on-the-fly-using-php/
                 $i++;
             }

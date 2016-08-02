@@ -13,7 +13,7 @@
             // targetHeight: 200,
             // scale: '0.5',
             // offset: 50,
-            position: 'left'
+            //position: 'left'
         });
     </script>
 </head>

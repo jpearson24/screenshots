@@ -17,7 +17,7 @@
         // });
         $(document).ready(function() {
             $(".livepreview").click(function() {
-                $('textarea').val('');
+                $('#text').val('');
                 $.ajax({
                     url : $(this).attr("href"),
                     dataType: "text",

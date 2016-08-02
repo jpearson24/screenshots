@@ -132,7 +132,7 @@
                 echo "<tr><td class=\"thumbs\"><a href=\"$imgpage\" data-lightbox=\"images\" data-thumbnail-src=\"$imgpage\"><img src=\"thumbnail.php?file=$imgpage&maxw=50&maxh=25\" /></a></td><td>$filedate</td><td>$filetime</td></tr>"; // Thumbnail source: http://www.webgeekly.com/tutorials/php/how-to-create-an-image-thumbnail-on-the-fly-using-php/
             }
 
-            echo '</table>'.$pageNumbers.'</div>';
+            echo '</table></div>';
 
             // Text files
             echo '<div style="float: right;">
@@ -145,7 +145,9 @@
                 $filetime
                 </td></tr>";
             }
-            echo '</table></div>';
+            echo '</table></div><div style="clear: both;">
+            '.$pageNumbers.'
+            </div>';
         }else{
             echo 'Error: Unable to read the directory';
         }

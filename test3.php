@@ -30,12 +30,19 @@
     <link href="css/livepreview-demo.css" rel="stylesheet" type="text/css">
     <script src="https://cdn.jsdelivr.net/clipboard.js/1.5.3/clipboard.min.js"></script>
     <script>
-    var clipboard = new Clipboard('.btn');
+        var clipboard = new Clipboard('.btn');
+
         clipboard.on('success', function(e) {
-        console.log(e);
+            console.info('Action:', e.action);
+            console.info('Text:', e.text);
+            console.info('Trigger:', e.trigger);
+
+            e.clearSelection();
         });
+
         clipboard.on('error', function(e) {
-        console.log(e);
+            console.error('Action:', e.action);
+            console.error('Trigger:', e.trigger);
         });
     </script>
     <script>

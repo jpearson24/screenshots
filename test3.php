@@ -49,8 +49,8 @@
                     success: function (data) {
                         $("#text").text(data);
                     }
-                    return false;
                 });
+                return false;
             });
         });
     </script>

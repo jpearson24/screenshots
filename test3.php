@@ -18,7 +18,7 @@
         $images = array(); //Dummy Array for Image list
         $texts = array(); //Dummy Array for text list
         $imgtype = array("png","jpg","jpeg"); //Image File types
-        $txttype = array("txt","pdf","doc","html","php"); //Text File Types
+        $txttype = array("txt","pdf","doc"); //Text File Types
         if ($handle = opendir('.')) {
             while (false !== ($file = readdir($handle))) {
                 if ($file != "." && $file != "..") {

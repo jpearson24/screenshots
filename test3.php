@@ -3,7 +3,7 @@
         echo '<form action="" method="post">
             <input type="password" name="Password" />
             <input type="submit" value="Submit" />
-        </form>'
+        </form>';
     }
     elseif( !empty($_POST) && $_POST['password'] != 'cd8877aef9f02a65df87c06204d6ad0f' ) {
         echo '<p style="color: red;">

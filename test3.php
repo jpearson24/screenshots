@@ -16,6 +16,11 @@
             //position: 'left'
         });
     </script>
+    <style>
+        table {
+            width: 45%;
+        }
+    </style>
 </head>
 <body>
     <?php

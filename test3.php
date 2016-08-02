@@ -42,6 +42,7 @@
         $(document).ready(function() {
             $(".livepreview").click(function() {
                 $("textarea").empty();
+                e.preventDefault();
                 $.ajax({
                     url: $(this).attr("href"),
                     dataType: "text",
@@ -49,7 +50,6 @@
                         $("#text").text(data);
                     }
                 });
-                e.preventDefault();
             });
         });
     </script>
@@ -140,7 +140,6 @@
             foreach($txtpages as $txtpage) {
                 $filedate = date('d/m/y',filemtime($txtpage));
                 $filetime = date('H:i',filemtime($txtpage));
-                echo $file;
                 echo "<tr><td><a href=\"$txtpage\" class=\"livepreview\">$txtpage</a></td><td>$filedate</td><td>
                 $filetime
                 </td></tr>";

@@ -28,6 +28,7 @@
     <link href="lightbox/lightbox.css" rel="stylesheet">
     <script type="text/javascript" src="js/jquery-live-preview.js"></script>
     <link href="css/livepreview-demo.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.rawgit.com/zenorocha/clipboard.js/v1.5.12/dist/clipboard.min.js">new Clipboard('.btn');</script>
     <script>
         // $(".livepreview").livePreview({
         //     // trigger: 'hover',

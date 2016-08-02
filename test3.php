@@ -7,12 +7,12 @@
     <script>
         $(".livepreview").livePreview({
             trigger: 'hover',
-            viewWidth: 300,
-            viewHeight: 200,
-            targetWidth: 300,
-            targetHeight: 200,
-            //scale: '0.5',
-            //offset: 50,
+            // viewWidth: 300,
+            // viewHeight: 200,
+            // targetWidth: 300,
+            // targetHeight: 200,
+            // scale: '0.5',
+            // offset: 50,
             position: 'left'
         });
     </script>

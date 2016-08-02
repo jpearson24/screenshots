@@ -28,7 +28,7 @@
     <link href="lightbox/lightbox.css" rel="stylesheet">
     <script type="text/javascript" src="js/jquery-live-preview.js"></script>
     <link href="css/livepreview-demo.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.rawgit.com/zenorocha/clipboard.js/v1.5.12/dist/clipboard.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/clipboard.js/1.5.3/clipboard.min.js"></script>
     <script>
     var clipboard = new Clipboard('.btn');
         clipboard.on('success', function(e) {

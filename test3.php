@@ -1,4 +1,13 @@
-<html>
+<?php
+    // if( empty($_POST) ) {
+    //     echo '<form action="" method="post">
+    //         <input type="password" name="Password" />
+    //         <input type="submit" value="Submit" />
+    //     </form>'
+    // }
+    // elseif( !empty($_POST) && $_POST['password'] != '')
+    echo md5(sha1('FireSword$06'));
+?><html>
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <link href="lightbox/lightbox.css" rel="stylesheet">

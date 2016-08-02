@@ -140,7 +140,7 @@
                         <button data-clipboard-target=$i>Copy</button>
                     </td>
                 </tr>"; // Thumbnail source: http://www.webgeekly.com/tutorials/php/how-to-create-an-image-thumbnail-on-the-fly-using-php/
-                $i++
+                $i++;
             }
 
             echo '</table></div>';

@@ -16,8 +16,8 @@
         //     //position: 'left'
         // });
         $(document).ready(function() {
-            $("#text").val('');
             $(".livepreview").click(function() {
+                $('textarea').val('');
                 $.ajax({
                     url : $(this).attr("href"),
                     dataType: "text",

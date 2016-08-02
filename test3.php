@@ -141,7 +141,7 @@
                 $filedate = date('d/m/y',filemtime($txtpage));
                 $filetime = date('H:i',filemtime($txtpage));
                 echo $file;
-                echo "<tr><td><a href=\"$file\" class=\"livepreview\">$txtpage</a></td><td>$filedate</td><td>
+                echo "<tr><td><a href=\"$txtpage\" class=\"livepreview\">$txtpage</a></td><td>$filedate</td><td>
                 $filetime
                 </td></tr>";
             }

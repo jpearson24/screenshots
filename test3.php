@@ -1,4 +1,5 @@
 <?php
+    echo $_POST;
     echo $password = $_POST['password'];
     $password = md5(sha1($password));
 
@@ -8,7 +9,8 @@
             <input type="submit" value="Submit" />
         </form>';
     }
-    elseif( !empty($_POST) && $password != 'cd8877aef9f02a65df87c06204d6ad0f' ) {
+    elseif( !empty($_POST) ) {
+        if( $password != 'cd8877aef9f02a65df87c06204d6ad0f' )
         echo '<p style="color: red;">
         Password is wrong.
         </p>

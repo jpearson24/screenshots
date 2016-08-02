@@ -30,6 +30,19 @@
     <link href="css/livepreview-demo.css" rel="stylesheet" type="text/css">
     <script src="clipboard/dist/clipboard.min.js"></script>
     <script>
+        (function(){
+            var but = document.getElementsByTagName('button');
+            for (var 1 = 0; i < but.length; i++) {
+                var copyCode = new Clipboard('#but-'i, {
+                    target: function(trigger) {
+                        return trigger.previousElementSibling;
+                    }
+                });
+            }
+            new Clipboard('#copy-button');
+        })();
+    </script>
+    <script>
         $(document).ready(function() {
             $(".livepreview").click(function() {
                 $("textarea").empty();
@@ -128,7 +141,7 @@
                         <a href=\"$imgpage\" data-lightbox=\"images\" data-thumbnail-src=\"$imgpage\">
                             <img src=\"thumbnail.php?file=$imgpage&maxw=50&maxh=25\" />
                         </a>
-                        <input type=\"hidden\" value=\"$imgpage\" id=\"$i\" />
+                        <input type=\"hidden\" value=\"$imgpage\" id=\"but-$i\" />
                     </td>
                     <td>
                         $filedate
@@ -137,7 +150,7 @@
                         $filetime
                     </td>
                     <td>
-                        <button data-clipboard-target=\"#$i\">Copy</button>
+                        <button data-clipboard-target=\"#but-$i\">Copy</button>
                     </td>
                 </tr>"; // Thumbnail source: http://www.webgeekly.com/tutorials/php/how-to-create-an-image-thumbnail-on-the-fly-using-php/
                 $i++;

@@ -158,15 +158,9 @@
                         </a>
                         <input type=\"hidden\" value=\"$imgpage\" id=\"but-$i\" />
                     </td>
-                    <td>
-                        $filedate
-                    </td>
-                    <td>
-                        $filetime
-                    </td>
-                    <td>
-                        <button data-copytarget=\"#but-$i\">Copy</button>
-                    </td>
+                    <td>$filedate</td>
+                    <td>$filetime</td>
+                    <td><button data-copytarget=\"#but-$i\">Copy</button></td>
                 </tr>"; // Thumbnail source: http://www.webgeekly.com/tutorials/php/how-to-create-an-image-thumbnail-on-the-fly-using-php/
                 $i++;
             }

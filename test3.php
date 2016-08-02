@@ -42,13 +42,14 @@
         $(document).ready(function() {
             $(".livepreview").click(function() {
                 $("textarea").empty();
-                e.preventDefault();
+                //e.preventDefault();
                 $.ajax({
                     url: $(this).attr("href"),
                     dataType: "text",
                     success: function (data) {
                         $("#text").text(data);
                     }
+                    return false;
                 });
             });
         });

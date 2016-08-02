@@ -16,8 +16,8 @@
         //     //position: 'left'
         // });
         $(document).ready(function() {
-            $(".livepreview").click(preventDefault());
             $(".livepreview").click(function() {
+                e.preventDefault();
                 $.ajax({
                     url : $(this).attr("href"),
                     dataType: "text",

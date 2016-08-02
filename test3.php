@@ -104,9 +104,7 @@
             foreach($imgpages as $imgpage) {
                 $filedate = date('d/m/y',filemtime($imgpage));
                 $filetime = date('H:i',filemtime($imgpage));
-                echo "<tr><td class=\"thumbs\"><a href=\"$imgpage\" data-lightbox=\"images\" data-thumbnail-src=\"$imgpage\"><img src=\"thumbnail.php?file=$imgpage&maxw=50&maxh=25\" /></a></td><td>$filedate</td><td>
-                $filetime
-                </td></tr>"; // Thumbnail source: http://www.webgeekly.com/tutorials/php/how-to-create-an-image-thumbnail-on-the-fly-using-php/
+                echo "<tr><td class=\"thumbs\"><a href=\"$imgpage\" data-lightbox=\"images\" data-thumbnail-src=\"$imgpage\"><img src=\"thumbnail.php?file=$imgpage&maxw=50&maxh=25\" /></a></td><td>$filedate</td><td>$filetime</td></tr>"; // Thumbnail source: http://www.webgeekly.com/tutorials/php/how-to-create-an-image-thumbnail-on-the-fly-using-php/
             }
 
             echo '</table>'.$pageNumbers.'</div>';

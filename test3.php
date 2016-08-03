@@ -29,13 +29,6 @@
     <script type="text/javascript" src="js/jquery-live-preview.js"></script>
     <link href="css/livepreview-demo.css" rel="stylesheet" type="text/css">
     <script>
-        new Clipboard('.btn', {
-            text: function() {
-                return document.querySelector('input[type=hidden]').value;
-            }
-        });
-    </script>
-    <script>
         $(document).ready(function() {
             $(".livepreview").click(function() {
                 $("textarea").empty();

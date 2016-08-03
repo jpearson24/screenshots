@@ -28,7 +28,6 @@
     <link href="lightbox/lightbox.css" rel="stylesheet">
     <script type="text/javascript" src="js/jquery-live-preview.js"></script>
     <link href="css/livepreview-demo.css" rel="stylesheet" type="text/css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.12/clipboard.min.js"></script>
     <script>
         new Clipboard('.btn', {
             text: function() {
@@ -165,6 +164,14 @@
         }
     ?>
     <script src="lightbox/lightbox.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.12/clipboard.min.js"></script>
+    <script>
+        new Clipboard('.btn', {
+            text: function() {
+                return document.querySelector('input[type=hidden]').value;
+            }
+        });
+    </script>
 </body>
 </html>
 <?php } ?>

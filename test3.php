@@ -17,7 +17,7 @@
             <input type="submit" value="Submit" />
         </form>';
     }
-    else
+    else {
     // if( empty($_GET) ) {
     //
     // }

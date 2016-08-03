@@ -127,7 +127,7 @@
                         <a href=\"$imgpage\" data-lightbox=\"images\" data-thumbnail-src=\"$imgpage\">
                             <img src=\"thumbnail.php?file=$imgpage&maxw=50&maxh=25\" />
                         </a>
-                        <input type=\"hidden\" value=\"$imgpage\" id=\"but-$i\" />
+                        <input type=\"hidden\" value=\"https://ssby.me/ss/$imgpage\" id=\"but-$i\" />
                     </td>
                     <td>$filedate</td>
                     <td>$filetime</td>

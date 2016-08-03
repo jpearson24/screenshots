@@ -3,7 +3,7 @@
     $password = md5(sha1($password));
     //echo md5(sha1(''));
 
-    if( !isset($_COOKIE) ) {
+    //if( !isset($_COOKIE) ) {
         echo 'false';
         if( empty($_POST) ) {
             echo '<form action="" method="post">
@@ -20,7 +20,7 @@
                 <input type="submit" value="Submit" />
             </form>';
         }
-    }
+    //}
     elseif( $password == 'cd8877aef9f02a65df87c06204d6ad0f' ) {
         //setcookie('login', 'allow');
         echo 'true';

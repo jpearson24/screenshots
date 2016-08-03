@@ -27,6 +27,7 @@
     }
     else/*if( $_COOKIE['login'] == 'allow' ) */{
         setcookie('login', 'allow', 1);
+        echo 'foo';
 ?><html>
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>

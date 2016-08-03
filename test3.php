@@ -1,6 +1,7 @@
 <?php
     $password = $_POST['Password'];
     $password = md5(sha1($password));
+    //echo md5(sha1(''));
 
     if( empty($_POST) ) {
         echo '<form action="" method="post">
@@ -17,12 +18,10 @@
             <input type="submit" value="Submit" />
         </form>';
     }
-    else {
-    // if( empty($_GET) ) {
-    //
-    // }
-    // elseif( $_GET['show'] == 'true' ) {
-    //echo md5(sha1(''));
+    elseif( $password == 'cd8877aef9f02a65df87c06204d6ad0f' ) {
+        setcookie('login', 'allow')
+    }
+    elseif( $_COOKIE['login'] == 'allow' ) {    
 ?><html>
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>

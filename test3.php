@@ -17,10 +17,11 @@
             <input type="submit" value="Submit" />
         </form>';
     }
-    if( empty($_GET) ) {
-
-    }
-    elseif( $_GET['show'] == 'true' ) {
+    else
+    // if( empty($_GET) ) {
+    //
+    // }
+    // elseif( $_GET['show'] == 'true' ) {
     //echo md5(sha1(''));
 ?><html>
 <head>

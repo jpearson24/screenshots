@@ -19,9 +19,9 @@
         </form>';
     }
     elseif( $password == 'cd8877aef9f02a65df87c06204d6ad0f' ) {
-        setcookie('login', 'allow')
+        setcookie('login', 'allow');
     }
-    elseif( $_COOKIE['login'] == 'allow' ) {    
+    elseif( $_COOKIE['login'] == 'allow' ) {
 ?><html>
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>

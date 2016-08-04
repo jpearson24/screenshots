@@ -28,6 +28,10 @@
         table {
             width: 45%;
         }
+        #outer {
+            width: 1000px;
+            text-align: center;
+        }
         #inner {
             width: 50%;
             margin: 0 auto;
@@ -43,7 +47,7 @@
     </style>
 </head>
 <body>
-    <div style="width: 1000px;">
+    <div id="outer">
         <div id="inner">
             <?php
                 if( !isset($_COOKIE['login']) ) {

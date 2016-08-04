@@ -4,7 +4,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <link href="lightbox/lightbox.css" rel="stylesheet">
     <script type="text/javascript" src="js/jquery-live-preview.js"></script>
-    <link href="css/livepreview-demo.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
     <script>
         $(document).ready(function() {
             $(".livepreview").click(function() {
@@ -24,6 +24,7 @@
     <style>
         body {
             text-align: center;
+            font-family: 'Ubuntu', sans-serif;
         }
         table {
             width: 45%;

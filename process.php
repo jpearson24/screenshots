@@ -13,5 +13,6 @@
         }
         else {
             setcookie('login', 'allow', time()+60*60*24*365);
+        }
     }
 ?>

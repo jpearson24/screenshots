@@ -5,7 +5,8 @@
     //echo md5(sha1(''));
 
     if( $logout ) {
-        echo 'Log out';
+        unset($_COOKIE['login']);
+        setcookie('login', 'allow', time()-3600, '/ss');
     }
     elseif( !isset($password) ) {
         header('Location: https://ssby.me/ss/?p=w');

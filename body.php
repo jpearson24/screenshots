@@ -79,7 +79,6 @@
                 </td>
                 <td>$filedate</td>
                 <td>$filetime</td>
-                <td>".print_r(getimagesize($imgpage))."</td>
                 <td><button class=\"btn\" data-clipboard-text=\"http://ssby.me/ss/$imgpage\" >Copy</button></td>
             </tr>"; // Thumbnail source: http://www.webgeekly.com/tutorials/php/how-to-create-an-image-thumbnail-on-the-fly-using-php/
             $i++;

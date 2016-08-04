@@ -29,6 +29,9 @@
             width: 50%;
             margin: 0 auto;
         }
+        p {
+            text-align: center;
+        }
     </style>
 </head>
 <body>

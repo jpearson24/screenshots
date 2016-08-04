@@ -1,6 +1,6 @@
 <?php
     $password = $_POST['Password'];
-    $logout = $_POST['logout'];
+    $logout = $_POST['Logout'];
     // Hash: cd8877aef9f02a65df87c06204d6ad0f
     //echo md5(sha1(''));
 

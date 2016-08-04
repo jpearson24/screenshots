@@ -87,6 +87,7 @@
             text-align: center;
         }
     </style>
+    <title>Screenshots</title>
 </head>
 <body>
     <div id="outer">

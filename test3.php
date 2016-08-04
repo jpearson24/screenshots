@@ -35,7 +35,7 @@
                     <input type="submit" value="Submit" />
                 </form>';
             }
-            elseif( !empty($_POST) && $password != 'cd8877aef9f02a65df87c06204d6ad0f' ) {
+            elseif( $_GET['p'] == 'w' ) {
                 echo '<p style="color: red;">
                 Password is wrong.
                 </p>

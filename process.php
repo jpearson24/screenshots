@@ -1,15 +1,17 @@
 <?php
     $password = $_POST['Password'];
-    $password = md5(sha1($password));
+    // Hash: cd8877aef9f02a65df87c06204d6ad0f
     //echo md5(sha1(''));
-    print_r($_COOKIE).'<br />';
 
-    if( !isset($_COOKIE['login']) ) {
-        echo 'false';
-        
+    if( !isset($password) ) {
+        header('Location: /?p=w');
     }
-    elseif( $password == 'cd8877aef9f02a65df87c06204d6ad0f' || isset($_COOKIE['login']) ) {
-        setcookie('login');
-        echo 'true';
-        echo 'foo';
+    elseif( isset($password) ) {
+        $password = md5(sha1($password));
+        if( $password != 'cd8877aef9f02a65df87c06204d6ad0f' ) {
+            header('Location: /?p=w');
+        }
+        else {
+            setcookie('login', 'allow', time()+60*60*24*365);
+    }
 ?>

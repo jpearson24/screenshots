@@ -98,7 +98,7 @@
         }
         echo '</table></div><div style="clear: both;">
         '.$pageNumbers.' <form action="process.php" method="post">
-        <input type="submit" value="logout" name="Logout" />
+        <input type="submit" value="Logout" name="logout" />
         </form>
         </div>';
     }else{

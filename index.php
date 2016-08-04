@@ -31,6 +31,7 @@
         #outer {
             width: 1000px;
             text-align: center;
+            border: 1px solid blue;
         }
         #inner {
             width: 50%;

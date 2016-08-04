@@ -7,6 +7,7 @@
     if( $logout ) {
         unset($_COOKIE['login']);
         setcookie('login', 'allow', time()-3600, '/ss');
+        header('Location: https://ssby.me/ss/');
     }
     elseif( !isset($password) ) {
         header('Location: https://ssby.me/ss/?p=w');

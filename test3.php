@@ -4,7 +4,7 @@
     //echo md5(sha1(''));
     print_r($_COOKIE).'<br />';
 
-    ( !isset($_COOKIE['login']) ) {
+    if( !isset($_COOKIE['login']) ) {
         echo 'false';
         if( empty($_POST) ) {
             echo '<form action="" method="post">

@@ -7,7 +7,7 @@
     if( $logout ) {
         echo 'Log out';
     }
-    if( !isset($password) ) {
+    elseif( !isset($password) ) {
         header('Location: https://ssby.me/ss/?p=w');
     }
     elseif( isset($password) ) {

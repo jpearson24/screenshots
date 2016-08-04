@@ -22,12 +22,9 @@
             </form>';
         }
     }
-    elseif( $password == 'cd8877aef9f02a65df87c06204d6ad0f' ) {
+    elseif( $password == 'cd8877aef9f02a65df87c06204d6ad0f' || isset($_COOKIE['login']) ) {
         setcookie('login');
         echo 'true';
-    }
-    else/*if( $_COOKIE['login'] == 'allow' ) */{
-        //setcookie('login', 'allow', 1);
         echo 'foo';
 ?><html>
 <head>

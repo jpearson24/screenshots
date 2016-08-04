@@ -52,6 +52,7 @@
         <div id="inner">
             <?php
                 if( !isset($_COOKIE['login']) ) {
+                    echo '<h1>Login</h1>';
                     if( $_GET['p'] == 'w' ) {
                         echo '<p style="color: red;">
                         Password is wrong.

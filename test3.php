@@ -2,6 +2,7 @@
     $password = $_POST['Password'];
     $password = md5(sha1($password));
     //echo md5(sha1(''));
+    print_r($_COOKIE).'<br />';
 
     //if( !isset($_COOKIE) ) {
         echo 'false';

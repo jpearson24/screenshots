@@ -133,7 +133,7 @@ if ($img) {
 
         // Get scale ratio
 
-        $fScale = min($iThumbnailWidth/$iOrigWidth,
+        $fScale = max($iThumbnailWidth/$iOrigWidth,
               $iThumbnailHeight/$iOrigHeight);
 
         // This works similarly to other one but

@@ -28,7 +28,7 @@
 </head>
 <body>
     <?php
-        if( !isset($_COOKIE) ) {
+        if( !isset($_COOKIE['login']) ) {
             if( empty($_POST) ) {
                 echo '<form action="" method="post">
                     <input type="password" name="Password" />

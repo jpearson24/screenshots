@@ -79,7 +79,7 @@
                 </td>
                 <td>$filedate</td>
                 <td>$filetime</td>
-                <td><button class=\"btn\" data-clipboard-text=\"http://ssby.me/ss/$imgpage\" >Copy</button></td>
+                <td><button class=\"btn myButton\" data-clipboard-text=\"http://ssby.me/ss/$imgpage\" >Copy</button></td>
             </tr>"; // Thumbnail source: http://www.webgeekly.com/tutorials/php/how-to-create-an-image-thumbnail-on-the-fly-using-php/
             $i++;
         }
@@ -95,7 +95,7 @@
             $filetime = date('H:i',filemtime($txtpage));
             echo "<tr><td><a href=\"$txtpage\" class=\"livepreview\">$txtpage</a><input type=\"hidden\" value=\"https://ssby.me/ss/$txtpage\" id=\"but-$i\" /></td><td>$filedate</td><td>
             $filetime
-            </td><td><button data-clipboard-text=\"http://ssby.me/ss/$txtpage\" class=\"btn\">Copy</button></td></tr>";
+            </td><td><button data-clipboard-text=\"http://ssby.me/ss/$txtpage\" class=\"btn myButton\">Copy</button></td></tr>";
         }
         echo '</table></div><div style="clear: both;">
         '.$pageNumbers.' <form action="process.php" method="post">

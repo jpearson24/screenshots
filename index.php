@@ -29,17 +29,17 @@
 <body>
     <?php
         if( !isset($_COOKIE['login']) ) {
-            if( empty($_POST) ) {
-                echo '<form action="process.php" method="post">
-                    <input type="password" name="Password" />
-                    <input type="submit" value="Submit" />
-                </form>';
-            }
-            elseif( $_GET['p'] == 'w' ) {
+            if( $_GET['p'] == 'w' ) {
                 echo '<p style="color: red;">
                 Password is wrong.
                 </p>
                 <form action="process.php" method="post">
+                    <input type="password" name="Password" />
+                    <input type="submit" value="Submit" />
+                </form>';
+            }
+            elseif( empty($_POST) ) {
+                echo '<form action="process.php" method="post">
                     <input type="password" name="Password" />
                     <input type="submit" value="Submit" />
                 </form>';

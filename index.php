@@ -22,6 +22,9 @@
         });
     </script>
     <style>
+        body {
+            text-align: center;
+        }
         table {
             width: 45%;
         }
@@ -30,7 +33,7 @@
             margin: 0 auto;
         }
         p {
-            text-align: center;
+            /*text-align: center;*/
         }
         form {
             display: inline-block;

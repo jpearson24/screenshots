@@ -5,7 +5,6 @@
     // Hash: 1619d7adc23f4f633f11014d2f22b7d8
     // echo md5(sha1(''));
 
-    if( )
     if( $logout ) {
         unset($_COOKIE['login']);
         setcookie('login', 'allow', time()-3600, '/ss');

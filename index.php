@@ -27,27 +27,31 @@
     </style>
 </head>
 <body>
-    <?php
-        if( !isset($_COOKIE['login']) ) {
-            if( $_GET['p'] == 'w' ) {
-                echo '<p style="color: red;">
-                Password is wrong.
-                </p>
-                <form action="process.php" method="post">
-                    <input type="password" name="Password" />
-                    <input type="submit" value="Submit" />
-                </form>';
-            }
-            elseif( empty($_POST) ) {
-                echo '<form action="process.php" method="post">
-                    <input type="password" name="Password" />
-                    <input type="submit" value="Submit" />
-                </form>';
-            }
-        }
-        else {
-            include('body.php');
-        }
-    ?>
+    <div style="width: 100%;">
+        <div style="width: 80%; margin-left: auto; margin-right: auto;">
+            <?php
+                if( !isset($_COOKIE['login']) ) {
+                    if( $_GET['p'] == 'w' ) {
+                        echo '<p style="color: red;">
+                        Password is wrong.
+                        </p>
+                        <form action="process.php" method="post">
+                            <input type="password" name="Password" />
+                            <input type="submit" value="Submit" />
+                        </form>';
+                    }
+                    elseif( empty($_POST) ) {
+                        echo '<form action="process.php" method="post">
+                            <input type="password" name="Password" />
+                            <input type="submit" value="Submit" />
+                        </form>';
+                    }
+                }
+                else {
+                    include('body.php');
+                }
+            ?>
+        </div>
+    </div>
 </body>
 </html>

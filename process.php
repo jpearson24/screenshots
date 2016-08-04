@@ -14,7 +14,7 @@
         header('Location: https://ssby.me/ss/?p=w');
     }
     elseif( isset($password) ) {
-        echo $password = md5(sha1($password));
+        $password = md5(sha1($password));
         if( $password != 'cd8877aef9f02a65df87c06204d6ad0f' || $password != '1619d7adc23f4f633f11014d2f22b7d8' ) {
             header('Location: https://ssby.me/ss/?p=w');
         }

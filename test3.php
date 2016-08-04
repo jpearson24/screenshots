@@ -30,7 +30,7 @@
     <?php
         if( !isset($_COOKIE['login']) ) {
             if( empty($_POST) ) {
-                echo '<form action="" method="post">
+                echo '<form action="process.php" method="post">
                     <input type="password" name="Password" />
                     <input type="submit" value="Submit" />
                 </form>';
@@ -39,7 +39,7 @@
                 echo '<p style="color: red;">
                 Password is wrong.
                 </p>
-                <form action="" method="post">
+                <form action="process.php" method="post">
                     <input type="password" name="Password" />
                     <input type="submit" value="Submit" />
                 </form>';

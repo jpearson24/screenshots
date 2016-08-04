@@ -34,7 +34,7 @@
             /*border: 1px solid blue;*/
         }
         #inner {
-            width: 50%;
+            width: 80%;
             margin: 0 auto;
             /*border: 1px solid red;*/
         }

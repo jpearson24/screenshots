@@ -73,7 +73,7 @@
             echo "<tr>
                 <td class=\"thumbs\">
                     <a href=\"$imgpage\" data-lightbox=\"images\" data-thumbnail-src=\"$imgpage\">
-                        <img src=\"thumbnail.php?file=$imgpage&height=100&width=100\" />
+                        <img src=\"thumbnail.php?file=$imgpage&maxw=100&maxh=100\" />
                     </a>
                     <input type=\"hidden\" value=\"https://ssby.me/ss/$imgpage\" id=\"but-$i\" />
                 </td>

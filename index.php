@@ -24,11 +24,15 @@
         table {
             width: 45%;
         }
+        #inner {
+            width: 50%;
+            margin: 0 auto;
+        }
     </style>
 </head>
 <body>
     <div style="width: 1000px;">
-        <div style="width: 80%; margin-left: auto; margin-right: auto;">
+        <div id="inner">
             <?php
                 if( !isset($_COOKIE['login']) ) {
                     if( $_GET['p'] == 'w' ) {

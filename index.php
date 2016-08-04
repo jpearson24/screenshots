@@ -27,7 +27,7 @@
     </style>
 </head>
 <body>
-    <div style="width: 100%;">
+    <div style="width: 1000px;">
         <div style="width: 80%; margin-left: auto; margin-right: auto;">
             <?php
                 if( !isset($_COOKIE['login']) ) {

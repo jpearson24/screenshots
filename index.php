@@ -31,12 +31,12 @@
         #outer {
             width: 100%;
             text-align: center;
-            border: 1px solid blue;
+            /*border: 1px solid blue;*/
         }
         #inner {
             width: 50%;
             margin: 0 auto;
-            border: 1px solid red;
+            /*border: 1px solid red;*/
         }
         p {
             /*text-align: center;*/

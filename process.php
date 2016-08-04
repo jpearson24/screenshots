@@ -1,8 +1,9 @@
 <?php
-    echo $password = $_POST['Password'];
+    $password = $_POST['Password'];
     $logout = $_POST['logout'];
     // Hash: cd8877aef9f02a65df87c06204d6ad0f
-    echo md5(sha1('password'));
+    // Hash: 1619d7adc23f4f633f11014d2f22b7d8
+    //echo md5(sha1(''));
 
     if( $logout ) {
         unset($_COOKIE['login']);
@@ -13,7 +14,7 @@
         header('Location: https://ssby.me/ss/?p=w');
     }
     elseif( isset($password) ) {
-        $password = md5(sha1($password));
+        echo $password = md5(sha1($password));
         if( $password != 'cd8877aef9f02a65df87c06204d6ad0f' || $password != '1619d7adc23f4f633f11014d2f22b7d8' ) {
             header('Location: https://ssby.me/ss/?p=w');
         }

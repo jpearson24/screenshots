@@ -29,7 +29,7 @@
             width: 45%;
         }
         #outer {
-            width: 1000px;
+            width: 100%;
             text-align: center;
             border: 1px solid blue;
         }

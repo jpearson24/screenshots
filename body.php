@@ -97,7 +97,9 @@
             </td></tr>";
         }
         echo '</table></div><div style="clear: both;">
-        '.$pageNumbers.'
+        '.$pageNumbers.' <form action="process.php" method="post">
+        <input type="submit" value="logout" name="Logout" />
+        </form>
         </div>';
     }else{
         echo 'Error: Unable to read the directory';

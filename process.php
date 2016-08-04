@@ -12,7 +12,7 @@
             header('Location: https://ssby.me/ss/?p=w');
         }
         else {
-            setcookie('login', 'allow', time()+60*60*24*365);
+            setcookie('login', 'allow', time()+60*60*24*365, '/ss');
             header('Location: https://ssby.me/ss/');
         }
     }

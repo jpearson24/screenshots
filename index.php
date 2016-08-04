@@ -31,6 +31,7 @@
         #inner {
             width: 50%;
             margin: 0 auto;
+            border: 1px solid redd;
         }
         p {
             /*text-align: center;*/
